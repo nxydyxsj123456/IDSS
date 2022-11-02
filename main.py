@@ -57,6 +57,7 @@ if __name__ == '__main__':
     #device = torch.device('cpu')
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(device)
+    print(device)
     #print(device=="cpu")
     attn = Attention(ENC_HID_DIM, DEC_HID_DIM)
     enc = Encoder(INPUT_DIM, ENC_EMB_DIM, ENC_HID_DIM, DEC_HID_DIM, ENC_DROPOUT)
